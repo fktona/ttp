@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="max-w-6xl relative mx-auto">
           <div className="flex relative flex-col  text-center mb-32">
             <motion.div
-              className="absolute left-0  lg:bottom-24 -bottom-16"
+              className="absolute left-0  lg:bottom-24 -bottom-24"
               variants={fadeIn}
               transition={{ delay: 0.2 }}
             >
@@ -57,7 +57,7 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
-              className="absolute right-0  lg:bottom-24 -bottom-8"
+              className="absolute right-0  lg:bottom-24 -bottom-16"
               variants={fadeIn}
               transition={{ delay: 0.2 }}
             >

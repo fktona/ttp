@@ -21,7 +21,7 @@ export function PlatformFeatures() {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 p-6 max-w-screen-2xl   mx-auto  ">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 p-6 max-w-screen-2xl relative  mx-auto  ">
       {features.map((feature, index) => (
         <Card
           key={index}
