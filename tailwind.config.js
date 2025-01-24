@@ -1,6 +1,7 @@
-import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-const tailwindConfig: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
@@ -45,7 +46,9 @@ const tailwindConfig: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        helvetica: ['"Helvetica Neue 55"', "sans-serif"], // Use the font name as defined in the imported CSS
+      },
     },
   },
 };
-export default tailwindConfig;
