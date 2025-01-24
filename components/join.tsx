@@ -15,7 +15,7 @@ function Join() {
         Join our community on discord to stay up to
         <br className="hidden lg:block" /> date
       </h2>
-      <Button className="bg-white rounded-full text-black px-8 py-6 text-lg ">
+      <Button className="bg-white rounded-full hover:bg-white/90 text-black px-8 py-6 text-lg ">
         Join Discord
       </Button>
     </div>

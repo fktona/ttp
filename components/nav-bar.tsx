@@ -44,21 +44,39 @@ function Navbar() {
             <span className="sr-only">Open menu</span>
           </button>
         </SheetTrigger>
-        <SheetContent
-          side="right"
-          className="w-[250px] sm:w-[300px] bg-gray-900"
-        >
-          <div className="flex flex-col gap-4 mt-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-white/80 hover:text-white transition-colors text-lg"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+        <SheetContent side="bottom" className="w-full h-screen bg-black p-0">
+          <div className="flex flex-col h-full relative">
+            <div className="flex justify-between items-center p-4 border-b border-gray-800">
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/logo-top.png"
+                  alt="Logo"
+                  width={37}
+                  height={33}
+                  className="object-contain"
+                />
+              </div>
+              <SheetTrigger asChild>
+                <button className="text-white">
+                  <X size={24} />
+                  <span className="sr-only">Close menu</span>
+                </button>
+              </SheetTrigger>
+            </div>
+            <div className="flex flex-col items-center justify-center flex-grow">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-white/80 hover:text-white transition-colors text-2xl py-4"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+
+              <div className="  w-full h-[180px]   blur-[116px]   mx-auto   absolute bottom-0 bg-[#392058]" />
+            </div>
           </div>
         </SheetContent>
       </Sheet>

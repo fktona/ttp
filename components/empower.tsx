@@ -15,7 +15,7 @@ export default function Empower() {
         </p>
         <Button
           size="lg"
-          className="bg-[#10FB9B] text-black text-lg rounded-full"
+          className="bg-[#10FB9B] bg-[#10FB9B]/70 text-black text-lg rounded-full"
         >
           Get Started
         </Button>

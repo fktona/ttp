@@ -33,7 +33,7 @@ export default function HomePage() {
         animate="visible"
         variants={fadeIn}
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl relative mx-auto">
           <div className="flex relative flex-col  text-center mb-32">
             <motion.div
               className="absolute left-0  lg:bottom-24 -bottom-16"
@@ -83,15 +83,13 @@ export default function HomePage() {
             >
               Empowering Solana with <br className="hidden" /> Intelligent
               Insights
-              <motion.div variants={fadeIn} transition={{ delay: 0.4 }}>
-                <Image
-                  src="/star.png"
-                  alt="Hero Logo"
-                  width={80}
-                  height={80}
-                  className="absolute lg:-bottom-0 lg:-right-[160px] right-0 top-0"
-                />
-              </motion.div>
+              <Image
+                src="/star.png"
+                alt="Hero Logo"
+                width={80}
+                height={80}
+                className="absolute  right-0 top-0"
+              />
             </motion.h1>
             <motion.p
               className="text-white/60 mx-auto text-xl max-w-2xl mb-12"

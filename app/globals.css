@@ -79,3 +79,11 @@ html {
 .gred {
   background: linear-gradient(90deg, #c162ed 3.68%, #2c0c54 106.32%);
 }
+
+.gred:hover {
+  background: linear-gradient(90deg, #2c0c54 3.68%, #c162ed 106.32%);
+}
+
+button:active {
+  transform: scale(0.95);
+}
