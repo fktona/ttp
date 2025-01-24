@@ -27,7 +27,7 @@ export function KeyFeatures() {
   return (
     <div
       id="features"
-      className="p-6 space-y-8  h-dvh max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
+      className="p-6 space-y-8 max-w-screen-2xl   mx-auto     h-dvh max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
     >
       <div className="flex md:items-center flex-col md:flex-row w-full  justify-between">
         <div className="flex items-start gap-4 flex-col ">
@@ -60,11 +60,11 @@ export function KeyFeatures() {
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim. Donec pede justo, fringilla vel,
       </p>
-      <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2 place-content-center   mx-auto xl:grid-cols-3">
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden group rounded-xl w-full   2xl:w-[382px] h-[295px] relative  border-none text-white"
+            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden lg:overflow-x-auto group rounded-xl w-full   2xl:w-[382px] h-[295px] relative  border-none text-white"
           >
             <Image
               src={feature.img}

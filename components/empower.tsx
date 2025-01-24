@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Empower() {
   return (
-    <div className="lg:h-[70dvh] max-h-[700px] h-[500px] isolate w-full relative flex flex-col  items-center justify-center">
+    <div className="lg:h-[70dvh] max-h-[700px] h-[500px] isolate w-full relative flex flex-col  max-w-screen-2xl   mx-auto  items-center justify-center">
       <div
         className=" w-[80%] text-white flex-col md:text-[53px] text-[30px] lg:leading-[63px] h-[80%] bg-white/10 backdrop-blur-lg rounded-3xl flex items-center gap-6 justify-center
       text-center"

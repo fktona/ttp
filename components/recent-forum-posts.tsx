@@ -35,8 +35,8 @@ export default function RecentForumPosts() {
   }));
 
   return (
-    <div className="w-full relative z-20 mt-20 px-6 py-12 ">
-      <div className="mx-auto ">
+    <div className="w-full relative  z-20 mt-20  px-6 py-12 ">
+      <div className="mx-auto  max-w-screen-2xl   ">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="lg:text-4xl text-3xl font-bold text-white">
             Recent Forum Post
@@ -51,7 +51,7 @@ export default function RecentForumPosts() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 relative isolate  overflow-x-hidden"
+          className="flex gap-6 relative isolate  overflow-x-hidden lg:overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
@@ -90,7 +90,7 @@ export default function RecentForumPosts() {
         </div>
       </div>
 
-      <div className="aspect-square  w-full h-[250%] -top-0 rounded-full blur-[246px]  -z-10 mx-auto   absolute  bg-[#392058]" />
+      <div className="aspect-square   h-[250%] -top-0  blur-[246px]   -z-10 mx-auto w-[100vw]   absolute  bg-[#392058]" />
     </div>
   );
 }

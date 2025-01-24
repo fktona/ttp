@@ -26,7 +26,7 @@ const subtleUp = {
 
 export default function HomePage() {
   return (
-    <div className="flex  min-h-[80dv]   flex-col relative isolate text-white">
+    <div className="flex  min-h-[80dv]   flex-col max-w-screen-2xl   mx-auto   relative isolate text-white">
       <motion.main
         className="container mx-auto px-4 pt-8"
         initial="hidden"
