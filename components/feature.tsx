@@ -8,19 +8,19 @@ export function KeyFeatures() {
       title: "Solana blockchain insights.",
       img: "/insight.png",
       description:
-        "felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,",
+        "Our AI Agent delves deep into the Solana blockchain to provide in-depth analyses of blockchain protocols, transaction trends, and ecosystem dynamics. Alongside expert commentary on the latest Solana developments, ensuring you're always informed.",
     },
     {
       title: "Memecoin market trends.",
       img: "/eco.png",
       description:
-        "felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,",
+        "Our agent provides real-time data on popular tokens within the Solana network, Insightful analysis of market movements and trends and comprehensive updates on emerging opportunities in the memecoin space",
     },
     {
       title: "Real-time ecosystem tracking.",
       img: "/tracking.png",
       description:
-        "felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,",
+        "Stay in the loop using our agent through continuous monitoring of Solana-related news, community developments, and technical upgrades and dynamic, real-time reports designed to keep pace with the ecosystem.",
     },
   ];
 
@@ -31,17 +31,6 @@ export function KeyFeatures() {
     >
       <div className="flex md:items-center flex-col md:flex-row w-full  justify-between">
         <div className="flex items-start gap-4 flex-col ">
-          <div className="flex gap-3 mb-3">
-            <div className="text-[13px] gap-2 px-4 py-3 rounded-full text-white bg-white/20 flex items-center justify-center">
-              Lorem
-              <div className="h-2 w-2 rounded-full bg-green-500" />
-            </div>
-            <div className="text-[13px] gap-2 px-4 py-3 rounded-full text-white bg-white/20 flex items-center justify-center">
-              Lorem
-              <div className="h-2 w-2 rounded-full   bg-green-500" />
-            </div>
-          </div>
-
           <h2 className="text-4xl font-bold text-white ml-2 mb-3">
             Key Features
           </h2>
@@ -55,16 +44,16 @@ export function KeyFeatures() {
         </Button>
       </div>
       <p className="text-gray-400 max-w-3xl">
-        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel,
+        Our AI Agent delves deep into the Solana blockchain to provide in-depth
+        analyses of blockchain protocols, transaction trends, and ecosystem
+        dynamics. Alongside expert commentary on the latest Solana developments,
+        ensuring you're always informed. 
       </p>
       <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2    mx-auto xl:grid-cols-3">
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden lg:overflow-x-auto group rounded-xl w-full   2xl:w-[382px] h-[295px] relative  border-none text-white"
+            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden  group rounded-xl w-full    min-h-[295px] relative  border-none text-white"
           >
             <Image
               src={feature.img}

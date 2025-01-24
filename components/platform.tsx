@@ -6,17 +6,17 @@ export function PlatformFeatures() {
     {
       title: "AI Agent with Solana knowledge",
       description:
-        "Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform",
+        "This AI Agent is built with an advanced understanding of the Solana blockchain and its ecosystem. From technical details about the blockchain, to tracking the latest innovations, our agent ensures every interaction delivers tailored, accurate, and valuable insights.",
     },
     {
       title: "Dynamic response management",
       description:
-        "Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform",
+        "Goodbye to repetitive or generic replies. Our agent uses a cutting-edge response management system to Generate unique, context-specific answers for every question. Adapt to new trends and discussions on the forum, continuously improve through machine learning.",
     },
     {
       title: "Interactive forum posting mechanism",
       description:
-        "Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform",
+        "Our agent integrates seamlessly into the forum, posting dynamic and meaningful responses to ongoing discussions.",
     },
   ];
 
@@ -25,7 +25,7 @@ export function PlatformFeatures() {
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="bg-[#1c1c24] 2xl:w-[382px] h-[295px] w-full  border-none text-white"
+          className="bg-[#1c1c24]  min-h-[295px] w-full  border-none text-white"
         >
           <CardContent className="p-6 flex flex-col  items-center  h-full space-y-4">
             <Image

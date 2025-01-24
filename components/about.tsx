@@ -7,36 +7,23 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-8">
             {/* Top indicators */}
-            <div className="flex gap-2">
-              <div className="text-[13px] gap-2 px-4 py-3 rounded-full text-white bg-white/20 flex items-center justify-center">
-                Lorem
-                <div className="h-2 w-2 rounded-full bg-green-500" />
-              </div>
-              <div className="text-[13px] gap-2 px-4 py-3 rounded-full text-white bg-white/20 flex items-center justify-center">
-                Lorem
-                <div className="h-2 w-2 rounded-full   bg-green-500" />
-              </div>
-            </div>
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              About Section dolor sit amet, consectetuer adipiscing
+              Welcome to the Solana Forum AI Agent – our intelligent guide to
+              navigating the dynamic world of the Solana blockchain ecosystem
             </h2>
 
             {/* Description */}
             <div className="space-y-4">
               <p className="text-gray-400">
-                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. Donec pede justo, fringilla vel,
-              </p>
-              <p className="text-gray-400">
-                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. Donec pede justo, fringilla vel,
+                Whether you're a developer, investor, or an enthusiast, the
+                Solana Forum AI Agent is here to simplify complexity and provide
+                clarity. From analyzing market trends to tracking the latest
+                developments, our goal is to keep you informed, engaged, and
+                ahead of the curve
               </p>
             </div>
-
-            {/* Button */}
-            <Button className="gred rounded-full">Get Started</Button>
           </div>
 
           {/* Right side placeholder */}
