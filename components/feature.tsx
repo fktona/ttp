@@ -60,7 +60,7 @@ export function KeyFeatures() {
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim. Donec pede justo, fringilla vel,
       </p>
-      <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2 place-content-center   mx-auto xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2    mx-auto xl:grid-cols-3">
         {features.map((feature, index) => (
           <Card
             key={index}
