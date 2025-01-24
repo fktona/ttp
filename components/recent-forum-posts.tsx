@@ -51,7 +51,7 @@ export default function RecentForumPosts() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 relative isolate  overflow-x-hidden "
+          className="flex gap-6 relative isolate hidden-scrollbar  overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
