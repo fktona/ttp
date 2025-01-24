@@ -64,7 +64,7 @@ export function KeyFeatures() {
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden group rounded-xl w-full h-full    2xl:w-[382px] h-[295px] relative  border-none text-white"
+            className="bg-gradient-to-br cursor-pointer isolate p-0 overflow-hidden group rounded-xl w-full   2xl:w-[382px] h-[295px] relative  border-none text-white"
           >
             <Image
               src={feature.img}
@@ -82,7 +82,7 @@ export function KeyFeatures() {
           </Card>
         ))}
       </div>
-      <div className="w-full h-full absolute left-0 -z-20 rotate-45 inset-0">
+      <div className="w-full h-full absolute -left-[50%]  bottom-[100%] -z-20 rotate-[310deg] inset-0">
         <Image
           src="/looper.png"
           alt="Hero Logo"
