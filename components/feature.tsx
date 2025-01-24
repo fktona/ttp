@@ -27,7 +27,7 @@ export function KeyFeatures() {
   return (
     <div
       id="features"
-      className="p-6 space-y-8 min-h-dvh isolate flex flex-col items-center justify-center md:items-start relative"
+      className="p-6 space-y-8  h-dvh max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
     >
       <div className="flex md:items-center flex-col md:flex-row w-full  justify-between">
         <div className="flex items-start gap-4 flex-col ">
