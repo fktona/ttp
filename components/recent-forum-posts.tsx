@@ -36,7 +36,7 @@ export default function RecentForumPosts() {
 
   return (
     <div className="w-full relative  z-20 mt-20  px-6 py-12 ">
-      <div className="mx-auto  max-w-screen-2xl   ">
+      <div className="mx-auto     ">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="lg:text-4xl text-3xl font-bold text-white">
             Recent Forum Post
@@ -50,16 +50,16 @@ export default function RecentForumPosts() {
         </div>
 
         <div
-          ref={scrollRef}
+          // ref={scrollRef}
           className="flex gap-6 relative isolate hidden-scrollbar  overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         >
-          {posts.map((post) => (
+          {[...posts, ...posts].map((post, index) => (
             <Card
-              key={post.id}
+              key={post.id + index + Math.random()}
               className="min-w-[380px] z-10 border-none bg-white/10 "
             >
               <CardContent className="p-6">
