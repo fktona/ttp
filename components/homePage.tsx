@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 
 const fadeIn = {
   hidden: { opacity: 0 },
@@ -81,8 +82,8 @@ export default function HomePage() {
               className="text-[40px] relative md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90"
               variants={subtleUp}
             >
-              Empowering Solana with <br className="hidden" /> Intelligent
-              Insights
+              Your Gateway to Real
+              <br className="hidden lg:block" /> Time Solana Insights
               <Image
                 src="/star.png"
                 alt="Hero Logo"
@@ -96,23 +97,26 @@ export default function HomePage() {
               variants={subtleUp}
               transition={{ delay: 0.2 }}
             >
-              felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-              consequat massa quis enim. Donec pede justo, fringilla vel,
+              Stay informed. Stay ahead. Empowering the Solana community with
+              accurate, timely updates on market trends
             </motion.p>
             <motion.div
               className="flex flex-col mx-auto sm:flex-row gap-4"
               variants={subtleUp}
               transition={{ delay: 0.3 }}
             >
-              <Button className="gred text-white px-8 py-6 text-lg rounded-full">
-                Learn More
-              </Button>
               <Button
+                asChild
+                className="gred text-white px-8 py-6 text-lg rounded-full"
+              >
+                <Link href="#about">Learn More</Link>
+              </Button>
+              {/* <Button
                 variant="outline"
                 className="border-white hidden lg:flex items-center justify-center  border-2 text-white hover:bg-white/10 bg-transparent px-8 py-6 text-lg rounded-full"
               >
                 Ask me anything
-              </Button>
+              </Button> */}
             </motion.div>
           </div>
         </div>
