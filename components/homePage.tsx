@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 const fadeIn = {
   hidden: { opacity: 0 },
