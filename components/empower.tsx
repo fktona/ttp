@@ -24,10 +24,9 @@ export default function Empower() {
         <Image
           src="/gradient.svg"
           alt="solana"
-          layout="fill"
-          objectFit="cover"
+          fill
           // objectPosition="center"
-          // className="absolute inset-0"
+          className="object-cover"
         />
       </div>
     </div>

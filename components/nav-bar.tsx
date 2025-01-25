@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import IconList from "./ui/icon-list";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,9 @@ function Navbar() {
             {item.label}
           </Link>
         ))}
+      </div>
+      <div className="hidden md:flex gap-6 items-center">
+        <IconList />
       </div>
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
@@ -74,6 +78,9 @@ function Navbar() {
                   {item.label}
                 </Link>
               ))}
+              <div className="absolute bottom-6 w-full flex justify-center z-30">
+                <IconList />
+              </div>
 
               <div className="  w-full h-[180px]   blur-[116px]   mx-auto   absolute bottom-0 bg-[#392058]" />
             </div>

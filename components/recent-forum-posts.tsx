@@ -27,7 +27,7 @@ export default function RecentForumPosts() {
   }, []);
 
   // Generate 12 dummy posts
-  const posts = Array.from({ length: 12 }, (_, i) => ({
+  const posts = Array.from({ length: 4 }, (_, i) => ({
     id: i + 1,
     title: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
     content:
@@ -51,16 +51,16 @@ export default function RecentForumPosts() {
 
         <div
           // ref={scrollRef}
-          className="flex gap-6 relative isolate hidden-scrollbar  overflow-x-auto"
+          className="flex gap-6 relative justify-center isolate hidden-scrollbar  overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         >
-          {[...posts, ...posts].map((post, index) => (
+          {[...posts].map((post, index) => (
             <Card
               key={post.id + index + Math.random()}
-              className="min-w-[380px] z-10 border-none bg-white/10 "
+              className="w-[380px] max-w-[380px] z-10 border-none bg-white/10 "
             >
               <CardContent className="p-6">
                 <h3 className="mb-4 text-xl font-semibold text-white">
