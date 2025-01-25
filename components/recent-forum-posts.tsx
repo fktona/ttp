@@ -27,7 +27,7 @@ export default function RecentForumPosts() {
   }, []);
 
   // Generate 12 dummy posts
-  const posts = Array.from({ length: 4 }, (_, i) => ({
+  const posts = Array.from({ length: 24 }, (_, i) => ({
     id: i + 1,
     title: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
     content:
@@ -57,7 +57,7 @@ export default function RecentForumPosts() {
               "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         >
-          {[...posts].map((post, index) => (
+          {posts.map((post, index) => (
             <Card
               key={post.id + index + Math.random()}
               className="w-[380px] max-w-[380px] z-10 border-none bg-white/10 "
