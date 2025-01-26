@@ -90,7 +90,7 @@ export default function RecentForumPosts() {
         </div>
       </div>
 
-      <div className="aspect-square   h-[250%] -top-0  blur-[246px] rounded-full   -z-10 mx-auto w-[100vw]   absolute  bg-[#392058]" />
+      <div className="aspect-square   h-[250%] -top-0  blur-[246px]   -z-10 mx-auto w-[100vw]   absolute  bg-[#392058]" />
     </div>
   );
 }
