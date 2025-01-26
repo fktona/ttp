@@ -27,7 +27,7 @@ export function KeyFeatures() {
   return (
     <div
       id="features"
-      className="p-6 space-y-8 max-w-screen-2xl   mx-auto     lg:max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
+      className="p-6 space-y-8 lg:px-[100px] max-w-screen-2xl   mx-auto     lg:max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
     >
       <div className="flex md:items-center flex-col md:flex-row w-full  justify-between">
         <div className="flex items-start gap-4 flex-col ">
@@ -47,7 +47,7 @@ export function KeyFeatures() {
         Our AI Agent delves deep into the Solana blockchain to provide in-depth
         analyses of blockchain protocols, transaction trends, and ecosystem
         dynamics. Alongside expert commentary on the latest Solana developments,
-        ensuring you're always informed. 
+        ensuring you're always informed.
       </p>
       <div className="grid grid-cols-1 gap-4 relative md:grid-cols-2    mx-auto xl:grid-cols-3">
         {features.map((feature, index) => (

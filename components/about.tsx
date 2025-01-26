@@ -2,7 +2,10 @@ import { Button } from "@/components/ui/button";
 
 export default function AboutSection() {
   return (
-    <div className=" p-8 md:p-16 max-w-screen-2xl   mx-auto " id="about">
+    <div
+      className=" p-8 md:p-16 lg:px-[100px] max-w-screen-2xl   mx-auto "
+      id="about"
+    >
       <div className=" mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-8">

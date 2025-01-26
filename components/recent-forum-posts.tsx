@@ -51,7 +51,7 @@ export default function RecentForumPosts() {
 
         <div
           // ref={scrollRef}
-          className="flex gap-6 relative justify-center isolate hidden-scrollbar  overflow-x-auto"
+          className="grid grid-flow-col gap-6 relative justify-center isolate hidden-scrollbar  overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
@@ -60,7 +60,7 @@ export default function RecentForumPosts() {
           {posts.map((post, index) => (
             <Card
               key={post.id + index + Math.random()}
-              className="w-[380px] max-w-[380px] z-10 border-none bg-white/10 "
+              className="w-[380px] z-10 border-none bg-white/10 "
             >
               <CardContent className="p-6">
                 <h3 className="mb-4 text-xl font-semibold text-white">
@@ -90,7 +90,7 @@ export default function RecentForumPosts() {
         </div>
       </div>
 
-      <div className="aspect-square   h-[250%] -top-0  blur-[246px]   -z-10 mx-auto w-[100vw]   absolute  bg-[#392058]" />
+      <div className="aspect-square   h-[250%] -top-0  blur-[246px] rounded-full   -z-10 mx-auto w-[100vw]   absolute  bg-[#392058]" />
     </div>
   );
 }

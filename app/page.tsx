@@ -9,7 +9,7 @@ import RecentForumPosts from "@/components/recent-forum-posts";
 
 export default function Page() {
   return (
-    <div className="w-full space-y-[100px]  overflow-x-hidden   ">
+    <div className="w-full space-y-[100px] hidden-scrollbar  overflow-x-hidden   ">
       <HomePage />
       <RecentForumPosts />
       <Integration />

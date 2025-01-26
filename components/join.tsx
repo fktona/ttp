@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 function Join() {
   return (
-    <div className="relative lg:px-[60px] max-h-[400px] px-6 isolate max-w-screen-2xl   mx-auto  w-full h-[40vh] flex md:items-center flex-col md:flex-row gap-5  items-start justify-center md:justify-between mt-10 text-white text-center">
+    <div className="relative lg:px-[100px] max-h-[400px] px-6 isolate max-w-screen-2xl   mx-auto  w-full h-[40vh] flex md:items-center flex-col md:flex-row gap-5  items-start justify-center md:justify-between mt-10 text-white text-center">
       <iframe
         src="https://my.spline.design/bganimationcopy-234b90662a22017486bd860c12da2cf6/"
         frameBorder="0"

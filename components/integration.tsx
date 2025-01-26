@@ -7,7 +7,7 @@ export default function Integration() {
     <div className="w-full relative px-5  max-w-screen-2xl   mx-auto ">
       <div
         id="integration"
-        className="lg:h-[85dvh] max-h-[700px]   z-30 min-h-[450px] lg:w-[80%] w-full backdrop-blur-lg  mx-auto relative lg:px-[77px] px-5 text-white flex flex-col items-start gap-6 justify-end py-8 lg:py-[56px] bg-[#392058]/40 rounded-[14px]"
+        className="lg:h-[85dvh] lg:px-[100px] max-h-[700px]   z-30 min-h-[450px] lg:w-[80%] w-full backdrop-blur-lg  mx-auto relative px-5 text-white flex flex-col items-start gap-6 justify-end py-8 lg:py-[56px] bg-[#392058]/40 rounded-[14px]"
       >
         <h2 className="lg:text-[50px] text-[30px]">Integration</h2>
         <p className="lg:text-[20px]">

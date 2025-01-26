@@ -17,7 +17,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="container mx-auto px-4 py-3 w-full flex justify-between items-center">
+    <nav className="container mx-auto px-4 py-3 lg:px-[100px] w-full flex justify-between items-center">
       <div className="w-12 h-12 relative">
         <Image
           src="/logo-top.png"
