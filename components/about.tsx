@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 export default function AboutSection() {
   return (
     <div
@@ -31,7 +31,15 @@ export default function AboutSection() {
 
           {/* Right side placeholder */}
           <div className="hidden md:block">
-            <div className="w-full aspect-square bg-[#261C37] rounded-lg" />
+            <div className="w-full aspect-square  rounded-lg">
+              <Image
+                src="/aboutimg.png"
+                alt="About"
+                width={1920}
+                height={1080}
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
           </div>
         </div>
       </div>
