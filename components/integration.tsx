@@ -19,7 +19,9 @@ export default function Integration() {
         </p>
         <Button className="text-[20px]  rounded-full py-6 max-w-screen-2xl   flex items-center justify-center gap-4  bg-[#392058]/80">
           Get Code
-          <Image src="/github.png" alt="github Logo" width={20} height={10} />
+          <a href="https://github.com/SOLIN-SOL/sol-insight" target="_blank">
+            <Image src="/github.png" alt="github Logo" width={20} height={10} />
+          </a>
         </Button>
       </div>
     </div>
