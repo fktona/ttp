@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 export default function AboutSection() {
   return (
     <div
@@ -12,13 +13,13 @@ export default function AboutSection() {
             {/* Top indicators */}
 
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
               Welcome to the Solana Forum AI Agent – our intelligent guide to
               navigating the dynamic world of the Solana blockchain ecosystem
             </h2>
 
             {/* Description */}
-            <div className="space-y-4">
+            <div className="flex flex-col gap-4 justify-start ">
               <p className="text-gray-400">
                 Whether you're a developer, investor, or an enthusiast, the
                 Solana Forum AI Agent is here to simplify complexity and provide
@@ -26,6 +27,14 @@ export default function AboutSection() {
                 developments, our goal is to keep you informed, engaged, and
                 ahead of the curve
               </p>
+              <Button
+                asChild
+                className="gred text-white mt-6  w-fit px-8 py-6 relative z-20 text-lg rounded-full"
+              >
+                <Link href="https://github.com/SOLIN-SOL/sol-insight">
+                  Get Started
+                </Link>
+              </Button>
             </div>
           </div>
 

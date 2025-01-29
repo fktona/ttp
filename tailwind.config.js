@@ -51,4 +51,27 @@ module.exports = {
       },
     },
   },
+
+  plugins: [
+    // require("tailwindcss-animate"),
+    (api) => {
+      const { addUtilities } = api;
+      addUtilities({
+        ".bg-int": {
+          backgroundImage: 'url("/int.svg")',
+          backgroundRepeat: "no-repeat",
+          // backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+        },
+        ".bg-footer": {
+          backgroundImage: 'url("/footer.png")',
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        },
+      });
+    },
+    require("tailwindcss-animate"),
+  ],
 };

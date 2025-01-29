@@ -26,51 +26,60 @@ export function PlatformFeatures() {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:px-[100px] p-6 max-w-screen-2xl relative  mx-auto  ">
+    <div className="w-full relative isolate   ">
       <div className="absolute top-0 left-0  flex justify-start w-full h-full z-10">
         <Image
-          src="/blur1.svg"
+          src="/grad.svg"
           alt="blur"
           width={1920}
           height={1080}
-          className="w-[500px] h-full object-cover"
+          className="w-[25%] rotate-90 h-full -top-[45%] absolute opacity-65  blur-[70px] -z-20  -left-2  object-contain"
+        />
+        <Image
+          src="/layer.svg"
+          alt="blur"
+          width={1920}
+          height={1080}
+          className="w-[25%]  h-full -top-[65%] absolute  blur-[70px]  -z-10  -left-2  object-cover"
         />
       </div>
-      {features.map((feature, index) => (
-        <Card
-          key={index}
-          className="  min-h-[295px] w-full  border-none text-white"
-          style={{ backgroundColor: feature.bg }}
-        >
-          <CardContent className="p-6 flex flex-col  items-center  h-full space-y-4">
-            <Image
-              src="/glass.svg"
-              alt="Feature 1"
-              width={45}
-              height={24}
-              className=""
-            />
-            <div className="grow  flex-1 flex flex-col  items-center justify-center gap-4 ">
-              <h3
-                className={cn(
-                  "text-[28px] leading-[37px] text-center font-semibold",
-                  index == 0 ? "text-white" : "text-black"
-                )}
-              >
-                {feature.title}
-              </h3>
-              <p
-                className={cn(
-                  "text-[14px] leading-[21px] text-center text-gray-400",
-                  index == 0 ? "text-[#898CA9]" : "text-black"
-                )}
-              >
-                {feature.description}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 max-w-screen-2xl lg:px-[100px] p-6  relative  mx-auto  ">
+        {features.map((feature, index) => (
+          <Card
+            key={index}
+            className="  min-h-[295px]  w-full  border-none text-white"
+            style={{ backgroundColor: feature.bg }}
+          >
+            <CardContent className="p-6 flex flex-col  items-center  h-full space-y-4">
+              <Image
+                src="/glass.svg"
+                alt="Feature 1"
+                width={45}
+                height={24}
+                className=""
+              />
+              <div className="grow  flex-1 flex flex-col  items-center justify-center gap-4 ">
+                <h3
+                  className={cn(
+                    "text-[28px] leading-[37px] text-center font-semibold",
+                    index == 0 ? "text-white" : "text-black"
+                  )}
+                >
+                  {feature.title}
+                </h3>
+                <p
+                  className={cn(
+                    "text-[14px] leading-[21px] text-center text-gray-400",
+                    index == 0 ? "text-[#898CA9]" : "text-black"
+                  )}
+                >
+                  {feature.description}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }

@@ -89,7 +89,7 @@ export default function HomePage() {
                 alt="Hero Logo"
                 width={60}
                 height={60}
-                className="absolute  right-0 lg:top-0 top-16"
+                className="absolute hidden md:block  right-0 lg:top-0 top-16"
               />
             </motion.h1>
             <motion.p

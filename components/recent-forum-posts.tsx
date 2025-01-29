@@ -45,8 +45,24 @@ export default function RecentForumPosts() {
   }, []);
 
   return (
-    <div className="w-full relative   z-20  px-6 py-12">
-      <div className=" max-w-screen-2xl mx-auto lg:px-[100px] mt-[20px]">
+    <div className="w-full relative isolate     ">
+      <div className="absolute top-0 left-0  flex justify-start w-full h-full z-10">
+        <Image
+          src="/grad.svg"
+          alt="blur"
+          width={1920}
+          height={1080}
+          className="w-[25%] rotate-90 h-full -top-[45%] absolute opacity-65  blur-[70px] -z-20  -left-2  object-contain"
+        />
+        <Image
+          src="/layer.svg"
+          alt="blur"
+          width={1920}
+          height={1080}
+          className="w-[25%]  h-full -top-[65%] absolute  blur-[70px]  -z-10  -left-2  object-cover"
+        />
+      </div>
+      <div className=" max-w-screen-2xl px-6 mx-auto lg:px-[100px] mt-[20px]">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="lg:text-4xl text-3xl font-bold text-white">
             Recent Forum Post
@@ -61,13 +77,13 @@ export default function RecentForumPosts() {
 
         <div
           // ref={scrollRef}
-          className="grid grid-flow-col max-w-screen-2xl mx-auto gap-6 relative justify-center isolate hidden-scrollbar overflow-x-auto"
+          className="grid grid-flow-col max-w-screen-2xl mx-auto gap-6 relative  isolate hidden-scrollbar overflow-x-auto"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, black 80%, transparent 100%)",
           }}
         >
-          <div className="absolute  max-w-screen-2xl mx-auto top-0 left-0  flex justify-start w-full h-full z-10">
+          {/* <div className="absolute  max-w-screen-2xl mx-auto top-0 left-0  flex justify-start w-full h-full z-10">
             <Image
               src="/blur1.svg"
               alt="blur"
@@ -75,7 +91,7 @@ export default function RecentForumPosts() {
               height={1080}
               className="w-[500px] h-full object-cover"
             />
-          </div>
+          </div> */}
           {posts.map((post) => (
             <Card
               key={post._id}

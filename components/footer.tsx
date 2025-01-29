@@ -6,7 +6,7 @@ import IconList from "./ui/icon-list";
 export default function Footer() {
   return (
     <footer className="w-full lg:px-[100px] bg-black py-3 px-4">
-      <div className="container mx-auto flex items-center justify-center md:justify-between text-sm text-gray-300">
+      <div className="container mx-auto flex items-center justify-center md:justify-between md:text-sm text-[12px] text-gray-300">
         <div>Some AI Agent © {new Date().getFullYear()} all right reserved</div>
         <IconList />
         <nav className="md:flex  gap-6 hidden">

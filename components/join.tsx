@@ -12,7 +12,8 @@ function Join() {
         className="absolute -z-10 inset-0"
       ></iframe>
       <h2 className="font-bold md:text-[57px] text-[38px] lg:leading-[69.8px] lg:max-w-[70%] text-start">
-        Join our community on discord to stay up to
+        Join our community on
+        <br className="hidden lg:block" /> discord to stay up to
         <br className="hidden lg:block" /> date
       </h2>
       <Button className="bg-white rounded-full hover:bg-white/90 text-black px-8 py-6 text-lg ">

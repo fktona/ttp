@@ -20,7 +20,7 @@ const IconList: React.FC = () => {
   ];
 
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex md:gap-4 gap-3 items-center">
       {icons.map((icon) => (
         <Button
           key={icon.name}
