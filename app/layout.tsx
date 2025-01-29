@@ -3,6 +3,11 @@ import "./globals.css";
 import Navbar from "@/components/nav-bar";
 import Footer from "@/components/footer";
 
+export const metadata: Metadata = {
+  title: "Sol-Insights",
+  description: "Solana Insight",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
