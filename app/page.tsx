@@ -16,6 +16,7 @@ export default function Page() {
       <AboutSection />
       <PlatformFeatures />
       <KeyFeatures />
+
       <Join />
       <Empower />
     </div>

@@ -10,11 +10,11 @@ const IconList: React.FC = () => {
       url: "#",
     },
     {
-      name: "github.svg",
+      name: "solana-icon.svg",
       url: "https://github.com/SOLIN-SOL/sol-insight",
     },
     {
-      name: "solana-icon.svg",
+      name: "github.svg",
       url: "#",
     },
   ];

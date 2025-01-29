@@ -44,8 +44,8 @@ export default function RecentForumPosts() {
   }, []);
 
   return (
-    <div className="w-full relative z-20 mt-20 px-6 py-12">
-      <div className="mx-auto lg:px-[100px]">
+    <div className="w-full relative  z-20  px-6 py-12">
+      <div className="mx-auto lg:px-[100px] mt-[20px]">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="lg:text-4xl text-3xl font-bold text-white">
             Recent Forum Post
@@ -59,7 +59,7 @@ export default function RecentForumPosts() {
         </div>
 
         <div
-          ref={scrollRef}
+          // ref={scrollRef}
           className="grid grid-flow-col gap-6 relative justify-center isolate hidden-scrollbar overflow-x-auto"
           style={{
             WebkitMaskImage:

@@ -27,9 +27,9 @@ const subtleUp = {
 
 export default function HomePage() {
   return (
-    <div className="flex  min-h-[80dv]   overflow-hidden  flex-col max-w-screen-2xl   mx-auto   relative isolate text-white">
+    <div className="flex  min-h-[calc(100dvh-20px)] mt-[20px]  overflow-hidden  flex-col max-w-screen-2xl   mx-auto   relative isolate text-white">
       <motion.main
-        className="container mx-auto px-4 pt-8"
+        className="w-full mx-auto px-4 pt-8 relative z-20 h-fit"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -107,7 +107,7 @@ export default function HomePage() {
             >
               <Button
                 asChild
-                className="gred text-white px-8 py-6 text-lg rounded-full"
+                className="gred text-white px-8 py-6 relative z-20 text-lg rounded-full"
               >
                 <Link href="#about">Learn More</Link>
               </Button>
@@ -120,15 +120,15 @@ export default function HomePage() {
             </motion.div>
           </div>
         </div>
-      </motion.main>
 
-      <iframe
-        src="https://my.spline.design/boxeshovercopy-53b90fc13166e3949cd016f9bb590bcd/"
-        frameBorder="0"
-        width="100%"
-        height="100%"
-        className="absolute overflow-x-hidden top-[70%] mx-auto mix-blend-luminosity left-[20%] inset-0 grow -z-10"
-      ></iframe>
+        <iframe
+          src="https://my.spline.design/boxeshovercopy-53b90fc13166e3949cd016f9bb590bcd/"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+          className="absolute overflow-x-hidden top-[70%] mx-auto mix-blend-luminosity left-[20%] inset-0 grow z-10"
+        ></iframe>
+      </motion.main>
     </div>
   );
 }
