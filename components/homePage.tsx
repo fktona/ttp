@@ -79,7 +79,7 @@ export default function HomePage() {
             </motion.div>
 
             <motion.h1
-              className="text-[40px] relative md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90"
+              className="text-[40px] relative md:text-7xl font-bold mb-8 bg-clip-text text-transparent"
               variants={subtleUp}
             >
               Your Gateway to Real
