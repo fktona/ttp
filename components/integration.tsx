@@ -18,7 +18,7 @@ export default function Integration() {
           fill
           className="md:hidden"
         />
-        <div className=" px-10 lg:px-[57px] lg:pb-12  pb-4  relative z-20    lg:space-y-[22px] space-y-3  font-helvetica   text-white ">
+        <div className=" px-10 lg:px-[57px] lg:pb-12  pb-4  relative z-20      lg:space-y-[22px] space-y-3  font-helvetica   text-white ">
           <h2 className="lg:text-[50px] text-[25px]">Integration</h2>
           <p className="lg:text-[36px] lg:leading-[43px] leading-[15px] text-[14px] lg:max-w-[80%] ">
             Integrate our framework to start understanding real-time market

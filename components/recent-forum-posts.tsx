@@ -45,8 +45,8 @@ export default function RecentForumPosts() {
   }, []);
 
   return (
-    <div className="w-full relative isolate     ">
-      <div className="absolute top-0 left-0  flex justify-start w-full h-full z-10">
+    <div className="w-full relative isolate  z-[100]   ">
+      <div className="absolute top-0 left-0  flex justify-start w-full h-full -z-0">
         <Image
           src="/grad.svg"
           alt="blur"
@@ -62,7 +62,7 @@ export default function RecentForumPosts() {
           className="w-[25%]  h-full -top-[65%] absolute  blur-[70px]  -z-10  -left-2  object-cover"
         />
       </div>
-      <div className=" max-w-screen-2xl px-6 mx-auto lg:px-[100px] mt-[20px]">
+      <div className=" max-w-screen-2xl relative z-10 px-6 mx-auto lg:px-[100px] mt-[20px]">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="lg:text-4xl text-3xl font-bold text-white">
             Recent Forum Post
@@ -71,7 +71,12 @@ export default function RecentForumPosts() {
             variant="outline"
             className="rounded-full hover:bg-white/10 hidden lg:flex items-center justify-center border-white/20 bg-transparent text-white hover:text-white lg:px-[67px] lg:py-[22px] text-lg"
           >
-            View all
+            <a
+              href="https://forum.solana.com/u/solinsights/profile-hidden"
+              target="_blank"
+            >
+              View all
+            </a>
           </Button>
         </div>
 
@@ -124,9 +129,12 @@ export default function RecentForumPosts() {
 
           <Button
             variant="outline"
-            className="rounded-full lg:hidden border-white/20 bg-transparent text-white hover:bg-transparent hover:text-white lg:px-[67px] lg:py-[22px] text-lg"
+            className="rounded-full relative z-10 lg:hidden border-white/20 bg-transparent text-white hover:bg-transparent hover:text-white lg:px-[67px] lg:py-[22px] text-lg"
           >
-            <a href="https://github.com/SOLIN-SOL/sol-insight" target="_blank">
+            <a
+              href="https://forum.solana.com/u/solinsights/profile-hidden"
+              target="_blank"
+            >
               View all
             </a>
           </Button>
