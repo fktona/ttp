@@ -23,8 +23,12 @@ export default function Integration() {
             including memecoin trends and opportunities,
             <br className="hidden md:block" /> with actionable data.
           </p>
-          <Button className="text-[20px]  rounded-full py-6 max-w-screen-2xl   flex items-center justify-center gap-4  bg-[#392058]">
-            <a href="https://github.com/SOLIN-SOL/sol-insight" target="_blank">
+          <Button className="text-[20px]  rounded-full py-6    flex items-center justify-center gap-4  bg-[#392058]">
+            <a
+              href="https://github.com/SOLIN-SOL/sol-insight"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
               Get Code
               <Image
                 src="/github.png"

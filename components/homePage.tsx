@@ -27,7 +27,7 @@ const subtleUp = {
 
 export default function HomePage() {
   return (
-    <div className="flex  min-h-[calc(100dvh-20px)] mt-[20px]  overflow-hidden  flex-col max-w-screen-2xl   mx-auto   relative isolate text-white">
+    <div className="flex  h-[calc(100dvh-20px)] max-h-[900px] mt-[20px]  overflow-hidden  flex-col max-w-screen-2xl   mx-auto   relative isolate text-white">
       <motion.main
         className="w-full mx-auto px-4 pt-8 relative z-20 h-fit"
         initial="hidden"
@@ -58,7 +58,7 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
-              className="absolute right-0  lg:bottom-24 -bottom-16"
+              className="absolute right-0 z-50  lg:bottom-24 -bottom-16"
               variants={fadeIn}
               transition={{ delay: 0.2 }}
             >
@@ -87,9 +87,9 @@ export default function HomePage() {
               <Image
                 src="/star.png"
                 alt="Hero Logo"
-                width={80}
-                height={80}
-                className="absolute  right-0 top-0"
+                width={60}
+                height={60}
+                className="absolute  right-0 lg:top-0 top-16"
               />
             </motion.h1>
             <motion.p
@@ -122,7 +122,7 @@ export default function HomePage() {
         </div>
 
         <iframe
-          src="https://my.spline.design/boxeshovercopy-53b90fc13166e3949cd016f9bb590bcd/"
+          src="https://my.spline.design/boxeshovercopycopy-b6b7c8e050afa9ffab103ea661aa326f"
           frameBorder="0"
           width="100%"
           height="100%"

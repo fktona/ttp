@@ -7,7 +7,7 @@ const IconList: React.FC = () => {
   const icons = [
     {
       name: "x.svg",
-      url: "#",
+      url: "https://x.com/SolanaInsights",
     },
     {
       name: "solana-icon.svg",
@@ -15,7 +15,7 @@ const IconList: React.FC = () => {
     },
     {
       name: "github.svg",
-      url: "#",
+      url: "https://forum.solana.com/u/solinsights",
     },
   ];
 

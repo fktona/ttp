@@ -27,9 +27,18 @@ export function KeyFeatures() {
   return (
     <div
       id="features"
-      className="p-6 space-y-8 lg:px-[100px] max-w-screen-2xl   mx-auto     lg:max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
+      className="p-6 space-y-8 overflow-y-hidden lg:px-[100px] max-w-screen-2xl   mx-auto     lg:max-h-[900px]  isolate flex flex-col items-center justify-center md:items-start relative"
     >
-      <div className="flex md:items-center flex-col md:flex-row w-full  justify-between">
+      <div className="absolute top-0 right-0  flex justify-end  w-full h-full z-10">
+        <Image
+          src="/blur1.svg"
+          alt="blur"
+          width={1920}
+          height={1080}
+          className="w-[500px] h-full object-cover rotate-180"
+        />
+      </div>
+      <div className="flex md:items-center z-50 relative flex-col md:flex-row w-full  justify-between">
         <div className="flex items-start gap-4 flex-col ">
           <h2 className="text-4xl font-bold text-white ml-2 mb-3">
             Key Features
@@ -40,7 +49,9 @@ export function KeyFeatures() {
           size={"lg"}
           className="text-white w-fit border-gray-600 rounded-full py-5 bg-transparent hover;bg-trandparent"
         >
-          Get Started
+          <a href="https://github.com/SOLIN-SOL/sol-insight" target="_blank">
+            Get Started
+          </a>
         </Button>
       </div>
       <p className="text-gray-400 max-w-3xl">
