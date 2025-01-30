@@ -19,8 +19,8 @@ export default function AboutSection() {
             </h2>
 
             {/* Description */}
-            <div className="flex flex-col gap-4 justify-start ">
-              <p className="text-gray-400">
+            <div className="flex flex-col gap-4 justify-start max-w-[600px] ">
+              <p className="text-gray-400 lg:text-[20px] lg:leading-[24px] teat-[14px] leading-[16px">
                 Whether you're a developer, investor, or an enthusiast, the
                 Solana Forum AI Agent is here to simplify complexity and provide
                 clarity. From analyzing market trends to tracking the latest
