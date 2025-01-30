@@ -42,7 +42,7 @@ export default function AboutSection() {
           <div className="hidden md:block">
             <div className="w-full aspect-square  rounded-lg">
               <Image
-                src="/aboutimg.png"
+                src="/aboutimg.svg"
                 alt="About"
                 width={1920}
                 height={1080}
